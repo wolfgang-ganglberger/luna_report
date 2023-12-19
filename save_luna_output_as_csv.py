@@ -7,7 +7,7 @@ def main(luna_output_dir = './luna_output'):
     """
 
     r_code = """library(luna)
-    k<-ldb("%s/out.db")
+    k<-ldb("%s/luna_output.db")
 
     write.csv(lx(k, "MASK", "EMASK"), "%s/mask_emask.csv", row.names = FALSE)
     write.csv(lx(k, "RE", "BL"), "%s/re_bl.csv", row.names = FALSE)

@@ -1,5 +1,5 @@
 library(luna)
-    k<-ldb("./luna_output/out.db")
+    k<-ldb("./luna_output/luna_output.db")
 
     write.csv(lx(k, "MASK", "EMASK"), "./luna_output/mask_emask.csv", row.names = FALSE)
     write.csv(lx(k, "RE", "BL"), "./luna_output/re_bl.csv", row.names = FALSE)
